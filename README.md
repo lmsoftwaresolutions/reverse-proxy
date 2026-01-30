@@ -12,11 +12,18 @@ dev-reverse-proxy/
 
 Generate self-signed certs for local domains:
 
+Linux:
 ```
 mkdir -p nginx/certs/lmsoftwaresolutions.local
 mkdir -p nginx/certs/successscienceacademy.local
 mkdir -p nginx/certs/nathkrupa.lmsoftwaresolutions.local
-
+```
+Windows:
+```
+mkdir nginx\certs\lmsoftwaresolutions.local
+mkdir nginx\certs\successscienceacademy.local
+mkdir nginx\certs\nathkrupa.lmsoftwaresolutions.local
+```
 # lmsoftwaresolutions.local
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout nginx/certs/lmsoftwaresolutions.local/privkey.pem \

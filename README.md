@@ -25,23 +25,45 @@ mkdir nginx\certs\successscienceacademy.local
 mkdir nginx\certs\nathkrupa.lmsoftwaresolutions.local
 ```
 # lmsoftwaresolutions.local
+Windows:
+```MSYS_NO_PATHCONV=1 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/certs/lmsoftwaresolutions.local/privkey.pem -out nginx/certs/lmsoftwaresolutions.local/fullchain.pem -subj "/C=IN/ST=Maharashtra/L=Pune/O=LM Software Solutions/CN=lmsoftwaresolutions.local"
+```
+
+Linux
+```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout nginx/certs/lmsoftwaresolutions.local/privkey.pem \
   -out nginx/certs/lmsoftwaresolutions.local/fullchain.pem \
   -subj "/CN=lmsoftwaresolutions.local"
+```
 
 # successscienceacademy.local
+
+Windows:
+```
+MSYS_NO_PATHCONV=1 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/certs/successscienceacademy.local/privkey.pem -out nginx/certs/successscienceacademy.local/fullchain.pem -subj "/C=IN/ST=Maharashtra/L=Pune/O=LM Software Solutions/CN=successscienceacademy.local"
+```
+Linux:
+```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout nginx/certs/successscienceacademy.local/privkey.pem \
   -out nginx/certs/successscienceacademy.local/fullchain.pem \
   -subj "/CN=successscienceacademy.local"
+```
 
 # nathkrupa.lmsoftwaresolutions.local
+
+Windows:
+```MSYS_NO_PATHCONV=1 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/certs/nathkrupa.lmsoftwaresolutions.local/privkey.pem -out nginx/certs/nathkrupa.lmsoftwaresolutions.local/fullchain.pem -subj "/C=IN/ST=Maharashtra/L=Pune/O=LM Software Solutions/CN=nathkrupa.lmsoftwaresolutions.local"
+```
+
+Linux
+```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout nginx/certs/nathkrupa.lmsoftwaresolutions.local/privkey.pem \
   -out nginx/certs/nathkrupa.lmsoftwaresolutions.local/fullchain.pem \
   -subj "/CN=nathkrupa.lmsoftwaresolutions.local"
-  ```
+```
 
 # Update /etc/hosts
 Add these lines to your local machine:

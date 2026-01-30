@@ -45,5 +45,17 @@ Add these lines to your local machine:
 127.0.0.1 nathkrupa.lmsoftwaresolutions.local
 ```
 
-# 
+# How to Run Locally
+
++ Build/run your frontends (or use placeholders like nginx:alpine for testing).
++ Start the reverse proxy:
+```docker-compose up -d```
+
+# Access in your browser (given that all other apps are also deployed using docker compose up command)
+```
+https://lmsoftwaresolutions.local
+https://successscienceacademy.local
+https://nathkrupa.lmsoftwaresolutions.local
+```
+Your browser may warn about self-signed certificates. You can click “Proceed” for dev testing.
 

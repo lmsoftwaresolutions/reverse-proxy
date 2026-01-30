@@ -49,7 +49,10 @@ Add these lines to your local machine:
 
 + Build/run your frontends (or use placeholders like nginx:alpine for testing).
 + Start the reverse proxy:
-```docker-compose up -d```
+```
+docker network create web
+docker-compose up -d
+```
 
 # Access in your browser (given that all other apps are also deployed using docker compose up command)
 ```

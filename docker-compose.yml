@@ -14,24 +14,6 @@ services:
     networks:
       - web
 
-  lms-frontend:
-    image: your-lms-frontend-image
-    container_name: lms-frontend
-    networks:
-      - web
-
-  ssa-frontend:
-    image: your-ssa-frontend-image
-    container_name: ssa-frontend
-    networks:
-      - web
-
-  travel-frontend:
-    image: your-travel-frontend-image
-    container_name: travel-frontend
-    networks:
-      - web
-
 networks:
   web:
     driver: bridge

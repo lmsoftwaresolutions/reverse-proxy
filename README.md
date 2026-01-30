@@ -56,7 +56,8 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 # nathkrupa.lmsoftwaresolutions.local
 
 Windows:
-```MSYS_NO_PATHCONV=1 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/certs/nathkrupa.lmsoftwaresolutions.local/privkey.pem -out nginx/certs/nathkrupa.lmsoftwaresolutions.local/fullchain.pem -subj "/C=IN/ST=Maharashtra/L=Pune/O=LM Software Solutions/CN=nathkrupa.lmsoftwaresolutions.local"
+```
+MSYS_NO_PATHCONV=1 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx/certs/nathkrupa.lmsoftwaresolutions.local/privkey.pem -out nginx/certs/nathkrupa.lmsoftwaresolutions.local/fullchain.pem -subj "/C=IN/ST=Maharashtra/L=Pune/O=LM Software Solutions/CN=nathkrupa.lmsoftwaresolutions.local"
 ```
 
 Linux
